@@ -3,15 +3,16 @@ body{
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../img/ocean.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: repeat-y;
 }
 input, button{
   font-family: 'Roboto', sans-serif;
 }
 .title{
   text-align: center;
-  font-family: 'Pacifico', cursive;
-  color:#ff69b4;
-  
+  font-family: 'Pacifico';
+  color:#f31584;
+  text-shadow: 1px 2px 4px rgba(2, 47, 116, 0.9);
 }
 .container-input{
   height:20vh;
@@ -26,7 +27,7 @@ header {
   top: 0;
   left: 0;
   z-index:5;
-  background:#ff69b4;
+  background:#f31584;
   box-shadow: 0px 2px 4px rgba(44,62,80,0.15);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -91,9 +92,10 @@ ul.todo li{
   min-height: 85px;
   list-style: none;
   float: left;
-  font-size: 14px;
+  font-family: Pacifico;
+  font-size: 24px;
   font-weight: 500;
-  color: #444;
+  color: #f31584;
   line-height: 22px;
   background: #fff;
   position: relative;
@@ -197,27 +199,39 @@ ul.todo#completed:before {
 }
 ul.todo#todo:empty:after{
   font-family: 'Pacifico', cursive;
-  color:#ff69b4;
+  color:#f31584;
   font-size: 40px;
   text-shadow: 1px 2px 4px rgba(2, 47, 116, 0.9);
-  text-align: center;
+  text-align: left;
   content:'You need something to do!';
   margin: 15px 0px 0px 0px;
 }
 ul.todo#completed:empty:after{
   font-family: 'Pacifico', cursive;
-  color:#ff69b4;
+  color:#f31584;
   font-size: 40px;
   text-shadow: 1px 2px 4px rgba(2, 47, 116, 0.9);
-  text-align: center;
+  float: right;
   content: 'You have not done anything today!';
 }
 
-ul.todo#todo:after,
-ul.todo#completed:after {
+ul.todo#completed:after{
+  font-family: 'Pacifico', cursive;
+  color:#f31584;
+  font-size: 40px;
+  text-shadow: 1px 2px 4px rgba(2, 47, 116, 0.9);
+  text-align: right;
+  content: 'Great Job!';
+}
+
+ul.todo#todo:after{
+/* ul.todo#completed:after { */
   width: 100%;
   display: block;
-  text-align: center;
-  font-size: 12px;
-  color: #aaa;
+  text-align: right;
+  font-family: 'Pacifico', cursive;
+  color:#f31584;
+  font-size: 40px;
+  text-shadow: 1px 2px 4px rgba(2, 47, 116, 0.9);
+  content: 'Do you want to do anything else today?';
 }
