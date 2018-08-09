@@ -1,6 +1,6 @@
 body{
   /* background: #edf0f1; */
-  background-image: url(../img/ocean.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../img/ocean.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -197,7 +197,8 @@ ul.todo#completed:before {
 ul.todo#todo:empty:after{
   font-family: 'Pacifico', cursive;
   color:#ff69b4;
-  font-size: 20px;
+  font-size: 36px;
+  text-shadow: 1px 2px 4px rgba(255, 255, 255, 0.9);
   text-align: center;
   content:'You need something to do!';
   margin: 15px 0px 0px 0px;
@@ -205,9 +206,10 @@ ul.todo#todo:empty:after{
 ul.todo#completed:empty:after{
   font-family: 'Pacifico', cursive;
   color:#ff69b4;
-  font-size: 20px;
+  font-size: 36px;
+  text-shadow: 1px 2px 4px rgba(255, 255, 255, 0.9);
   text-align: center;
-  content: 'You have not done anything today.';
+  content: 'You have not done anything today!';
 }
 
 ul.todo#todo:after,
