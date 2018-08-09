@@ -11,6 +11,7 @@ input, button{
   text-align: center;
   font-family: 'Pacifico', cursive;
   color:#ff69b4;
+  padding-top: 100px;
 }
 .container-input{
   height:20vh;
@@ -197,8 +198,8 @@ ul.todo#completed:before {
 ul.todo#todo:empty:after{
   font-family: 'Pacifico', cursive;
   color:#ff69b4;
-  font-size: 36px;
-  text-shadow: 1px 2px 4px rgba(255, 255, 255, 0.9);
+  font-size: 40px;
+  text-shadow: 1px 2px 4px rgba(2, 47, 116, 0.9);
   text-align: center;
   content:'You need something to do!';
   margin: 15px 0px 0px 0px;
@@ -206,8 +207,8 @@ ul.todo#todo:empty:after{
 ul.todo#completed:empty:after{
   font-family: 'Pacifico', cursive;
   color:#ff69b4;
-  font-size: 36px;
-  text-shadow: 1px 2px 4px rgba(255, 255, 255, 0.9);
+  font-size: 40px;
+  text-shadow: 1px 2px 4px rgba(2, 47, 116, 0.9);
   text-align: center;
   content: 'You have not done anything today!';
 }
